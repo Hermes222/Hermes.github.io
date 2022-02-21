@@ -1,0 +1,267 @@
+* {
+  margin: 0;
+}
+.hleft img {
+  height: 40px;
+  border-radius: 90%;
+  box-shadow: salmon 1px 1px;
+}
+.profilePic {
+  border-radius: 50%;
+  width: 45px;
+}
+
+.header {
+  padding: 15px 20px;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0 5px 8px -9px salmon;
+}
+.hleft {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.search {
+  display: flex;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 10px;
+  margin-left: 10px;
+  border-radius: 999px;
+}
+.search input {
+  border: none;
+  background-color: transparent;
+  outline-width: 0;
+}
+.hmiddle {
+  display: flex;
+  flex: 1;
+  justify-content: center;
+}
+.headerOption #icon {
+  font-size: xx-large;
+  color: salmon;
+}
+.headerOption:hover #icon {
+  color: salmon;
+}
+.headerOption {
+  display: flex;
+  align-items: center;
+  padding: 0 30px;
+  cursor: pointer;
+}
+.headerOption.active #icon {
+  color: salmon;
+}
+
+.headerOption:hover {
+  border-bottom: 4px solid salmon;
+}
+.headerInfo {
+  display: flex;
+  align-items: center;
+}
+.headerInfo h4 {
+  margin-left: 10px;
+  color: white;
+}
+
+.hright {
+  display: flex;
+  align-items: center;
+}
+.smallIcon #icon {
+  color: salmon;
+  margin: 0 10px;
+  cursor: pointer;
+  justify-content: space-evenly;
+}
+.smallIcon:hover #icon {
+  transform: scale(1.3);
+}
+/* adding styles to side bar */
+
+.row {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+.row #icon {
+  color: salmon;
+  font-size: x-large;
+}
+.row h4 {
+  color: black;
+  margin-left: 20px;
+  font-weight: 400;
+}
+.row:hover h4 {
+  color: white;
+}
+.row:hover {
+  background-color: lightsalmon;
+  border-radius: 10px;
+}
+.row:hover #icon {
+  transform: scale(1.2);
+}
+.row:hover h4 {
+  transform: scale(1.2);
+}
+.feed {
+  display: flex;
+  flex: 1;
+  padding: 30px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/*  */
+
+.mainBD {
+  display: flex;
+}
+/*  */
+.post {
+  display: flex;
+  margin-bottom: 10px;
+  flex-direction: column;
+  background-color: white;
+  border-radius: 30px;
+  box-shadow: 0px 5px 7px -7px black;
+  width: 100%;
+}
+.postTop {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid lightgray;
+  padding: 15px;
+}
+.post form {
+  flex: 1;
+  display: flex;
+}
+.post form input {
+  flex: 1;
+  outline-width: 0;
+  border: none;
+  padding: 15px 20px;
+  margin: 0px 10px;
+  border-radius: 999px;
+  background-color: whitesmoke;
+}
+.postBottom {
+  display: flex;
+  justify-content: space-evenly;
+}
+.postOptions #icon {
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  color: salmon;
+  margin: 5px;
+}
+.postOptions h3 {
+  font-size: medium;
+  margin-left: 10px;
+  justify-content: space-evenly;
+}
+.postOptions:hover {
+  transform: scale(1.3);
+}
+.listing {
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0px 5px 7px -7px black;
+}
+.listingImage img {
+  width: 100%;
+}
+.listingTop {
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding: 15px;
+}
+.listingTop #profilePic {
+  margin-right: 10px;
+}
+.listingTop h3 {
+  font-size: medium;
+}
+.listingTop p {
+  font-size: small;
+  color: grey;
+}
+.listingBottom {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px 25px;
+}
+.listingSelection {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+  cursor: pointer;
+  padding: 15px;
+}
+.listingSelection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex: 1;
+}
+.listingSelectionHeart,
+.listingSelectionMessage,
+.listingSelectionShare {
+  padding: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  font-size: medium;
+  color: salmon;
+  cursor: pointer;
+  padding: 15px;
+}
+.listingSelectionHeart,
+.listingSelectionMessage,
+.listingSelectionShare {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+  flex: 1;
+}
+.listingSelectionMessage p {
+  margin-left: 10px;
+  color: grey;
+}
+.listingSelectionHeart:hover #heart {
+  color: red;
+  transform: scale(1.3);
+}
+.listingSelectionMessage:hover #message {
+  color: greenyellow;
+  transform: scale(1.3);
+}
+.listingSelectionShare:hover #share {
+  color: lightskyblue;
+  transform: scale(1.3);
+}
+.completeListing {
+  margin-top: -10px;
+}
