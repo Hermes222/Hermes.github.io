@@ -1,10 +1,14 @@
+:root{
+  --themeColor:#42A5FF;
+}
+
 * {
   margin: 0;
 }
 .hleft img {
   height: 40px;
   border-radius: 90%;
-  box-shadow: salmon 1px 1px;
+  box-shadow: var(--themeColor) 1px 1px;
 }
 .profilePic {
   border-radius: 50%;
@@ -19,7 +23,7 @@
   top: 0;
   background-color: white;
   z-index: 100;
-  box-shadow: 0 5px 8px -9px salmon;
+  box-shadow: 0 5px 8px -9px var(--themeColor);
 }
 .hleft {
   display: flex;
@@ -46,10 +50,10 @@
 }
 .headerOption #icon {
   font-size: xx-large;
-  color: salmon;
+  color: var(--themeColor);
 }
 .headerOption:hover #icon {
-  color: salmon;
+  color: var(--themeColor);
 }
 .headerOption {
   display: flex;
@@ -58,11 +62,11 @@
   cursor: pointer;
 }
 .headerOption.active #icon {
-  color: salmon;
+  color: var(--themeColor);
 }
 
 .headerOption:hover {
-  border-bottom: 4px solid salmon;
+  border-bottom: 4px solid var(--themeColor);
 }
 .headerInfo {
   display: flex;
@@ -78,7 +82,7 @@
   align-items: center;
 }
 .smallIcon #icon {
-  color: salmon;
+  color: var(--themeColor);
   margin: 0 10px;
   cursor: pointer;
   justify-content: space-evenly;
@@ -96,7 +100,7 @@
   cursor: pointer;
 }
 .row #icon {
-  color: salmon;
+  color: var(--themeColor);
   font-size: x-large;
 }
 .row h4 {
@@ -108,7 +112,7 @@
   color: white;
 }
 .row:hover {
-  background-color: lightsalmon;
+  background-color: lightgrey;
   border-radius: 10px;
 }
 .row:hover #icon {
@@ -168,7 +172,7 @@
   padding: 8px;
   display: flex;
   align-items: center;
-  color: salmon;
+  color: #42A5FF;
   margin: 5px;
 }
 .postOptions h3 {
@@ -233,7 +237,7 @@
   display: flex;
   justify-content: space-evenly;
   font-size: medium;
-  color: salmon;
+  color: var(--themeColor);
   cursor: pointer;
   padding: 15px;
 }

@@ -1,0 +1,139 @@
+<html>
+  <head>
+    <title>CAS Homes</title>
+    <link rel="stylesheet" href="../cssFiles/homeStyels.css" />
+  </head>
+  <body>
+    <div class="nav" id="nav">
+      <p>CAS HOMES</p>
+      <div id="spacer"></div>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#aboutUs">about us</a></li>
+        <li><a href="#pricing">pricing</a></li>
+        <li><a href="#Mission">our mission</a></li>
+        <li><a href="#app">download our app</a></li>
+        <li></li>
+        <!-- empty place holder for design purposes  -->
+      </ul>
+    </div>
+    <div id="home" class="header">
+      <div class="content">
+        <div class="image">
+          <img src="../images/squareCas.png" alt="" />
+        </div>
+        <h1>Modernize your rental properties</h1>
+        <p>
+          create a fun responsive social media page for your properties, and see
+          stats on your earnings.
+        </p>
+        <div class="buttons">
+          <button href="./index.html" type="button"><span></span>Login</button>
+          <button type="button"><span></span>Sign up</button>
+        </div>
+      </div>
+    </div>
+    <div id="aboutUs" class="about-us">
+      <div class="description">
+        <p>
+          America is a country of valiant and spirited people, whose imagination
+          and an unbeatable spirit made it possible to create a country with
+          numerous brave hearts. Be it Memorial Day or the American Independence
+          Day, inspirational sayings about America and American history are
+          great means to demonstrate patriotism. Whether they are famous quotes
+          about America by Harry S. Truman or phrases about America from famous
+          people, you can use them to show your love for the great country.
+        </p>
+      </div>
+    </div>
+    <!-- pricing -->
+    <div id="pricing" class="pricing">
+      <section class="pricing-plan">
+        <div class="pricing-header">
+          <h1 class="pricing-title">starter plan</h1>
+          <h2 class="pricing-summary">getting started</h2>
+        </div>
+        <div class="pricing-description">
+          <ul class="pricing-list">
+            <li class="pricing-features">feature 1</li>
+            <li class="pricing-features">feature 2</li>
+            <li class="pricing-features">feature 3</li>
+          </ul>
+        </div>
+        <div class="pricing-action">
+          <p class="pricing-cost">$68</p>
+          <p class="pricing-text">per month</p>
+          <a href="./" class="pricing-Button">Purchase</a>
+          <p class="pricing-text">money back guarentee</p>
+        </div>
+      </section>
+      <section class="pricing-plan pricing-plan-recomended">
+        <div class="pricing-plan-Toptext">Recomended</div>
+        <div class="pricing-header">
+          <h1 class="pricing-title">starter plan</h1>
+          <h2 class="pricing-summary">getting started</h2>
+        </div>
+        <div class="pricing-description">
+          <ul class="pricing-list">
+            <li class="pricing-features">feature 1</li>
+            <li class="pricing-features">feature 2</li>
+            <li class="pricing-features">feature 3</li>
+          </ul>
+        </div>
+        <div class="pricing-action">
+          <p class="pricing-cost">$68</p>
+          <p class="pricing-text">per month</p>
+          <a href="./" class="pricing-Button">Purchase</a>
+          <p class="pricing-text">money back guarentee</p>
+        </div>
+      </section>
+      <section class="pricing-plan">
+        <div class="pricing-header">
+          <h1 class="pricing-title">starter plan</h1>
+          <h2 class="pricing-summary">getting started</h2>
+        </div>
+        <div class="pricing-description">
+          <ul class="pricing-list">
+            <li class="pricing-features">feature 1</li>
+            <li class="pricing-features">feature 2</li>
+            <li class="pricing-features">feature 3</li>
+          </ul>
+        </div>
+        <div class="pricing-action">
+          <p class="pricing-cost">$68</p>
+          <p class="pricing-text">per month</p>
+          <a href="./" class="pricing-Button">Purchase</a>
+          <p class="pricing-text">money back guarentee</p>
+        </div>
+      </section>
+    </div>
+    <!-- pricing -->
+    <div id="mission" class="mission">
+      <p>mission</p>
+    </div>
+    <div id="app" class="app">
+      <p>app</p>
+    </div>
+
+    <script>
+      window.onscroll = function () {
+        myFunction();
+      };
+
+      var navbar = document.getElementById("nav");
+
+      var sticky = navbar.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset >= sticky) {
+          navbar.classList.add("sticky");
+        } else {
+          navbar.classList.remove("sticky");
+        }
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,400&family=Rubik:wght@300&display=swap');
+      </style>
+  </body>
+</html>

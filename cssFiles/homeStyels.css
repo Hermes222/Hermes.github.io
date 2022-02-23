@@ -1,0 +1,245 @@
+:root {
+  --themeColor: #42a5ff;
+}
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif !important;
+}
+.header {
+  width: 100%;
+  height: 100vh;
+  padding: 36px;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+    url(../images/house.jpg);
+  background-size: cover;
+  background-position: center;
+  display: flex;
+}
+
+.nav {
+  width: 100%;
+  height: 60px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: black;
+  padding-left: 20px;
+  z-index: 100;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  padding-top: top 60px;
+}
+
+.nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+.nav ul li a {
+  text-decoration: none;
+  color: white;
+  text-transform: uppercase;
+}
+.nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: var(--themeColor);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+.nav ul li:hover::after {
+  width: 100%;
+}
+.nav p {
+  color: var(--themeColor);
+  margin-right: auto;
+  font-weight: bold !important;
+  font-size: 1.1em;
+}
+.nav .spacer {
+  flex: 1;
+}
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+  color: white;
+}
+.content h1 {
+  font-size: 70px;
+  margin-top: 80px;
+}
+.content p {
+  margin: 20px auto;
+  font-weight: 100;
+  line-height: 25px;
+}
+.buttons button {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid var(--themeColor);
+  background: transparent;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+span {
+  background: var(--themeColor);
+  height: 100px;
+  width: 0;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+.buttons button:hover span {
+  width: 100%;
+}
+.buttons button:hover {
+  border: none;
+}
+
+.about-us {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background-color: white;
+  background-size: cover;
+  background-position: center;
+}
+.description {
+  position: absolute;
+  width: 80%;
+  height: 75%;
+  left: 10%;
+  right: 10%;
+  top: 125%;
+  bottom: 10%;
+  background-color: var(--themeColor);
+  box-shadow: 5px 10px #888888; 
+}
+/* pricing styles bellow */
+.pricing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+div .pricing-plan{
+  width: 300px;
+  border-radius: 25px;
+  box-shadow: 0 0 5px black;
+  overflow: hidden;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #888888;
+  margin: 15px;
+}
+.pricing-plan-recomended{
+  box-shadow: 0 0 15px black;
+  transform: scale(1.05);
+}
+.pricing-plan-Toptext{
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  background: #0286ff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) inset;
+}
+.pricing-header{
+padding: 25px;
+background: var(--themeColor);
+color: white;
+}
+.pricing-title,
+.pricing-summary{
+margin: 0;
+text-align: center;
+}
+.pricing-title{
+  font-size: 1.5em;
+  font-weight: 400;
+}
+.pricing-summary{
+  font-size: 1em;
+  font-weight: 300;
+}
+.pricing-description{
+  padding: 25px;
+
+}
+.pricing-list{
+  padding: 0;
+  margin: 0;
+}
+.pricing-features{
+  list-style: none;
+  margin: 0;
+  padding-left: 25px;
+  position: relative;
+  font-size: 0.9em;
+}
+.pricing-features:not(:last-child){
+  margin-bottom: 0.5em;
+}
+.pricing-features::before{
+  content: "\2714";
+  color: var(--themeColor);
+  position: absolute;
+  left: 0;
+}
+.pricing-action{
+  padding: 25px;
+  border-top: 1px solid white;
+  display: flex;
+  flex-direction: column;
+}
+.pricing-Button{
+  display: inline-block;
+  margin: 15px auto;
+  padding: 8px 20px;
+  text-decoration: none;
+  color: var(--themeColor);
+  background: white;
+  border-radius: 5px;
+  border: 1px solid var(--themeColor);
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  font-weight: bold;
+
+}
+.pricing-Button:hover{
+  background: var(--themeColor);
+  color: white;
+}
+.pricing-cost{
+  margin: 0;
+  text-align: center;
+  font-size: 2em;
+  color: black;
+}
+.pricing-text{
+  font-size: 0.9em;
+  text-align: center;
+  margin:  0 0 10px 0;
+}
+
