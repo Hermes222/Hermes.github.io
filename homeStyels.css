@@ -15,7 +15,7 @@ html{
   height: 100vh;
   padding: 36px;
   background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
-    url(../images/house.jpg);
+    url(images/house.jpg);
   background-size: cover;
   background-position: center;
   display: flex;
